@@ -6,6 +6,7 @@ export interface Inputs {
     owner: string;
     repo: string;
     prNumber: number;
+    username: string;
 }
 
 export async function getInputs(): Promise<Inputs> {
@@ -14,5 +15,6 @@ export async function getInputs(): Promise<Inputs> {
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
         prNumber: github.context.issue.number,
+        username: github.context.actor
     };
 }
