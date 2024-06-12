@@ -1,0 +1,28 @@
+{
+  "name": "pull-request-validator",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azqazq195/actions.add-reviewers.git"
+  },
+  "keywords": [
+    "actions",
+    "pull-request"
+  ],
+  "author": "moseoh",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "ts-node": "^10.4.0",
+    "@types/node": "^16.4.10"
+  }
+}

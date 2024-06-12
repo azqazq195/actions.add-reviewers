@@ -1,0 +1,13 @@
+name: 'Add Reviewers'
+description: 'Auto add reviewers on pull requests.'
+author: 'moseoh'
+inputs:
+  token:
+    description: 'GitHub token to authenticate requests.'
+    required: true
+runs:
+  using: 'node20'
+  main: 'lib/index.js'
+branding:
+  icon: 'git-pull-request'
+  color: 'blue'
